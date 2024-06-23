@@ -26,17 +26,15 @@ export class DashboardComponent {
     this.router.navigateByUrl("/login")
   }
 
-  irHome(): void{
-    this.router.navigate(["home"],{relativeTo: this.route})
+
+  irPregunta2(): void{
+    this.router.navigate(["pregunta2"],{relativeTo: this.route})
   }
-  irCurso(): void{
-    this.router.navigate(["curso"],{relativeTo: this.route})
+  irPregunta3(): void{
+    this.router.navigate(["pregunta3"],{relativeTo: this.route})
   }
-  irPost(): void{
-    this.router.navigate(["post"],{relativeTo: this.route})
-  }
-  irEstado(): void{
-    this.router.navigate(["estado"],{relativeTo: this.route})
+  irPregunta4(): void{
+    this.router.navigate(["pregunta4"],{relativeTo: this.route})
   }
 
 }

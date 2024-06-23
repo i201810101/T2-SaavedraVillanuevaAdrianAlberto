@@ -1,1 +1,20 @@
-<p>pregunta2 works!</p>
+<div class="container">
+  <h2>Calculadora de Precios</h2>
+  <form (ngSubmit)="calcularPregunta2()">
+    <mat-form-field appearance="fill">
+      <mat-label>Cantidad</mat-label>
+      <input matInput type="number" [(ngModel)]="pregunta2.cantidad" name="cantidad">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Precio Unitario</mat-label>
+      <input matInput type="number" [(ngModel)]="pregunta2.precioUnitario" name="precioUnitario">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Calcular Precio Final</button>
+  </form>
+</div>
+@if (mostrarResultado) {
+  <div class="alert alert-primary" role="alert">
+   {{precioFinal}}
+  </div>
+
+}
